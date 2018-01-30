@@ -33,7 +33,7 @@ Class AmoAPI
 		$this->_login = $login;
 		$this->_hash = $hash;
 		$this->_domain = $domain;
-		$this->_link = 'https://'.$this->_domain.'.amocrm.'.$this->_domain;
+		$this->_link = 'https://'.$this->_subdomain.'.amocrm.'.$this->_domain;
 	}
 
 	protected function query($link, $type = 'GET', $data = NULL)
